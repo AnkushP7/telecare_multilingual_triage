@@ -1,0 +1,7393 @@
+{
+  "metadata": {
+    "title": "Annotated Code-Mixed Clinical Telecare Dataset",
+    "project": "Mixed Multilingual Symptom Extraction & Triage Support for Telecare",
+    "review": "Project Review 2",
+    "tag_schema": [
+      "O",
+      "B-SYMPTOM",
+      "I-SYMPTOM",
+      "B-DURATION",
+      "I-DURATION",
+      "B-SEVERITY",
+      "I-SEVERITY",
+      "B-SITE",
+      "I-SITE"
+    ],
+    "total_sentences": 155,
+    "train_count": 108,
+    "dev_count": 23,
+    "test_count": 24,
+    "dialects": [
+      "Hinglish",
+      "Tanglish",
+      "Hinglish / English mixed",
+      "Clinical English"
+    ]
+  },
+  "train": [
+    {
+      "text": "Enakku 2 days irundhu chest pain and body heat romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "days",
+        "irundhu",
+        "chest",
+        "pain",
+        "and",
+        "body",
+        "heat",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe kal raat se thondai me halka kaichal hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "kal",
+        "raat",
+        "se",
+        "thondai",
+        "me",
+        "halka",
+        "kaichal",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "loose motions ho raha hai 3 naal se aur unbearable tired bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "loose",
+        "motions",
+        "ho",
+        "raha",
+        "hai",
+        "3",
+        "naal",
+        "se",
+        "aur",
+        "unbearable",
+        "tired",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and sar dard 2 naal ah irukku, romba high feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "sar",
+        "dard",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "romba",
+        "high",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba high",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se thala vali aur gala me dard hai, feel ho raha hai moderate.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "thala",
+        "vali",
+        "aur",
+        "gala",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "moderate."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 4 hours se gala me moderate sar dard hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "4",
+        "hours",
+        "se",
+        "gala",
+        "me",
+        "moderate",
+        "sar",
+        "dard",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe kal raat se gala me konjam nenju vali hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "kal",
+        "raat",
+        "se",
+        "gala",
+        "me",
+        "konjam",
+        "nenju",
+        "vali",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se saans lene me dikkat aur body me dard hai, feel ho raha hai unbearable.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "aur",
+        "body",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "unbearable."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se kaichal aur body me dard hai, feel ho raha hai acute.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "kaichal",
+        "aur",
+        "body",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "acute."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 1 week irundhu vomiting and weakness romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "1",
+        "week",
+        "irundhu",
+        "vomiting",
+        "and",
+        "weakness",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Gale me dard hai 4 din se aur high fever bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Gale",
+        "me",
+        "dard",
+        "hai",
+        "4",
+        "din",
+        "se",
+        "aur",
+        "high",
+        "fever",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Gale",
+          "label": "SITE"
+        },
+        {
+          "text": "dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "high",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "fever",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Mujhe 2 days se nenju me unbearable chakkar hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "2",
+        "days",
+        "se",
+        "nenju",
+        "me",
+        "unbearable",
+        "chakkar",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chakkar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "nenju",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku kal raat irundhu gala dard and sweating romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "kal",
+        "raat",
+        "irundhu",
+        "gala",
+        "dard",
+        "and",
+        "sweating",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "gala dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sweating",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se gala dard aur back me dard hai, feel ho raha hai moderate.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "gala",
+        "dard",
+        "aur",
+        "back",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "moderate."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "gala dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "back",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "sar romba valikkuthu, subah se ah moderate sar dard irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "sar",
+        "romba",
+        "valikkuthu,",
+        "subah",
+        "se",
+        "ah",
+        "moderate",
+        "sar",
+        "dard",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "subah se",
+          "label": "DURATION"
+        },
+        {
+          "text": "sar",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Nenjula sudden ah heaviness irukku, sweating romba aagudhu.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Nenjula",
+        "sudden",
+        "ah",
+        "heaviness",
+        "irukku,",
+        "sweating",
+        "romba",
+        "aagudhu."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Nenjula",
+          "label": "SITE"
+        },
+        {
+          "text": "heaviness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sweating",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Severe nenju vali radiating to pet since since morning.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "nenju",
+        "vali",
+        "radiating",
+        "to",
+        "pet",
+        "since",
+        "since",
+        "morning."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se bukhar aur body me dard hai, feel ho raha hai halka.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "bukhar",
+        "aur",
+        "body",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "halka."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "bukhar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 2 days se back me acute saans lene me dikkat hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "2",
+        "days",
+        "se",
+        "back",
+        "me",
+        "acute",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "back",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se chest pain aur chest me dard hai, feel ho raha hai acute.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "chest",
+        "pain",
+        "aur",
+        "chest",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "acute."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mudhuguvalli 1 week ah irukku, acute back pain.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Mudhuguvalli",
+        "1",
+        "week",
+        "ah",
+        "irukku,",
+        "acute",
+        "back",
+        "pain."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM"
+      ],
+      "entities": [
+        {
+          "text": "Mudhuguvalli",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "back pain",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Thala vali and pet dard 2 naal ah irukku, halka feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "pet",
+        "dard",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "halka",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 2 din se back me romba high pet dard hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "2",
+        "din",
+        "se",
+        "back",
+        "me",
+        "romba",
+        "high",
+        "pet",
+        "dard",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba high",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "back",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing unbearable thala vali and shivering for subah se.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "unbearable",
+        "thala",
+        "vali",
+        "and",
+        "shivering",
+        "for",
+        "subah",
+        "se."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "subah se",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing severe bukhar and dizziness for kal raat.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "severe",
+        "bukhar",
+        "and",
+        "dizziness",
+        "for",
+        "kal",
+        "raat."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "bukhar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 5 days irundhu sar dard and dizziness romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "5",
+        "days",
+        "irundhu",
+        "sar",
+        "dard",
+        "and",
+        "dizziness",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "5 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "chest pain ho raha hai 5 days se aur acute tired bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "chest",
+        "pain",
+        "ho",
+        "raha",
+        "hai",
+        "5",
+        "days",
+        "se",
+        "aur",
+        "acute",
+        "tired",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "5 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 3 naal se thondai me acute vaanthi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "3",
+        "naal",
+        "se",
+        "thondai",
+        "me",
+        "acute",
+        "vaanthi",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and nenju vali 2 naal ah irukku, konjam feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "nenju",
+        "vali",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "konjam",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 2 din se nenju me konjam chakkar hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "2",
+        "din",
+        "se",
+        "nenju",
+        "me",
+        "konjam",
+        "chakkar",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chakkar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "nenju",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and vaanthi 2 naal ah irukku, moderate feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "vaanthi",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "moderate",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing moderate vaanthi and sweating for 2 days.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "moderate",
+        "vaanthi",
+        "and",
+        "sweating",
+        "for",
+        "2",
+        "days."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sweating",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "chest romba valikkuthu, 1 week ah bahut tez thala vali irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "chest",
+        "romba",
+        "valikkuthu,",
+        "1",
+        "week",
+        "ah",
+        "bahut",
+        "tez",
+        "thala",
+        "vali",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "pet romba valikkuthu, kal raat ah unbearable kaichal irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "pet",
+        "romba",
+        "valikkuthu,",
+        "kal",
+        "raat",
+        "ah",
+        "unbearable",
+        "kaichal",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 3 naal irundhu nenju vali and sweating romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "3",
+        "naal",
+        "irundhu",
+        "nenju",
+        "vali",
+        "and",
+        "sweating",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sweating",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thalavali 2 naala irukku, romba tired ah irukku body.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thalavali",
+        "2",
+        "naala",
+        "irukku,",
+        "romba",
+        "tired",
+        "ah",
+        "irukku",
+        "body."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE"
+      ],
+      "entities": [
+        {
+          "text": "Thalavali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 naala",
+          "label": "DURATION"
+        },
+        {
+          "text": "romba",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "chest pain ho raha hai 1 week se aur moderate nausea bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "chest",
+        "pain",
+        "ho",
+        "raha",
+        "hai",
+        "1",
+        "week",
+        "se",
+        "aur",
+        "moderate",
+        "nausea",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "nausea",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku since morning irundhu vaanthi and nausea romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "since",
+        "morning",
+        "irundhu",
+        "vaanthi",
+        "and",
+        "nausea",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "nausea",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Erythematous skin rash with pruritus across trunk for 2 days.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Erythematous",
+        "skin",
+        "rash",
+        "with",
+        "pruritus",
+        "across",
+        "trunk",
+        "for",
+        "2",
+        "days."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "skin rash",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "skin",
+          "label": "SITE"
+        },
+        {
+          "text": "pruritus",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "trunk",
+          "label": "SITE"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Kal se sar dard aur pet me dard hai, feel ho raha hai acute.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "sar",
+        "dard",
+        "aur",
+        "pet",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "acute."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se bukhar aur chest me dard hai, feel ho raha hai unbearable.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "bukhar",
+        "aur",
+        "chest",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "unbearable."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "bukhar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 2 days irundhu loose motions and vomiting romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "days",
+        "irundhu",
+        "loose",
+        "motions",
+        "and",
+        "vomiting",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and nenju vali 2 naal ah irukku, mild feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "nenju",
+        "vali",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "mild",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se kaichal aur back me dard hai, feel ho raha hai moderate.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "kaichal",
+        "aur",
+        "back",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "moderate."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "back",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing acute vomiting and dizziness for 3 naal.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "acute",
+        "vomiting",
+        "and",
+        "dizziness",
+        "for",
+        "3",
+        "naal."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing unbearable saans lene me dikkat and shivering for 4 hours.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "unbearable",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "and",
+        "shivering",
+        "for",
+        "4",
+        "hours."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and bukhar 2 naal ah irukku, bahut tez feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "bukhar",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "bahut",
+        "tez",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "bukhar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing acute vaanthi and tired for 1 week.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "acute",
+        "vaanthi",
+        "and",
+        "tired",
+        "for",
+        "1",
+        "week."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Pet me bahut tez dard ho raha hai 3 ghante se aur baar baar ulti aa rahi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Pet",
+        "me",
+        "bahut",
+        "tez",
+        "dard",
+        "ho",
+        "raha",
+        "hai",
+        "3",
+        "ghante",
+        "se",
+        "aur",
+        "baar",
+        "baar",
+        "ulti",
+        "aa",
+        "rahi",
+        "hai."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Pet",
+          "label": "SITE"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "3 ghante",
+          "label": "DURATION"
+        },
+        {
+          "text": "baar baar",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "ulti",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Sudden onset of severe palpitations and diaphoresis lasting 30 minutes.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Sudden",
+        "onset",
+        "of",
+        "severe",
+        "palpitations",
+        "and",
+        "diaphoresis",
+        "lasting",
+        "30",
+        "minutes."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "palpitations",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "diaphoresis",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "30 minutes",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Thala vali and nenju vali 2 naal ah irukku, unbearable feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "nenju",
+        "vali",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "unbearable",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "bukhar ho raha hai 3 naal se aur moderate dizziness bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "bukhar",
+        "ho",
+        "raha",
+        "hai",
+        "3",
+        "naal",
+        "se",
+        "aur",
+        "moderate",
+        "dizziness",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "bukhar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "khansi ho raha hai 4 hours se aur acute tired bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "khansi",
+        "ho",
+        "raha",
+        "hai",
+        "4",
+        "hours",
+        "se",
+        "aur",
+        "acute",
+        "tired",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "khansi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe gala dard radiating to thondai since since morning.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "gala",
+        "dard",
+        "radiating",
+        "to",
+        "thondai",
+        "since",
+        "since",
+        "morning."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "gala dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe sar dard radiating to thondai since since morning.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "sar",
+        "dard",
+        "radiating",
+        "to",
+        "thondai",
+        "since",
+        "since",
+        "morning."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Since morning chest heavy hai aur saans lene mein thodi dikkat ho rahi hai.",
+      "dialect": "Hinglish / English mixed",
+      "tokens": [
+        "Since",
+        "morning",
+        "chest",
+        "heavy",
+        "hai",
+        "aur",
+        "saans",
+        "lene",
+        "mein",
+        "thodi",
+        "dikkat",
+        "ho",
+        "rahi",
+        "hai."
+      ],
+      "tags": [
+        "B-DURATION",
+        "I-DURATION",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "chest heavy",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        },
+        {
+          "text": "saans lene mein thodi dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "thodi",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Inniku kaalaila irundhu vomiting non stop ah irukku, vayiru vali jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Inniku",
+        "kaalaila",
+        "irundhu",
+        "vomiting",
+        "non",
+        "stop",
+        "ah",
+        "irukku,",
+        "vayiru",
+        "vali",
+        "jaasthi."
+      ],
+      "tags": [
+        "B-DURATION",
+        "I-DURATION",
+        "I-DURATION",
+        "B-SYMPTOM",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "Inniku kaalaila irundhu",
+          "label": "DURATION"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "non stop",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "vayiru vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vayiru",
+          "label": "SITE"
+        },
+        {
+          "text": "jaasthi",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Enakku 2 din irundhu pet dard and vomiting romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "din",
+        "irundhu",
+        "pet",
+        "dard",
+        "and",
+        "vomiting",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing unbearable vaanthi and body heat for 2 days.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "unbearable",
+        "vaanthi",
+        "and",
+        "body",
+        "heat",
+        "for",
+        "2",
+        "days."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing severe chest pain and dizziness for 1 week.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "severe",
+        "chest",
+        "pain",
+        "and",
+        "dizziness",
+        "for",
+        "1",
+        "week."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se vaanthi aur pet me dard hai, feel ho raha hai acute.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "vaanthi",
+        "aur",
+        "pet",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "acute."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and loose motions 2 naal ah irukku, romba high feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "loose",
+        "motions",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "romba",
+        "high",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba high",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "2 din se sar dard aur vomiting lag raha hai, body bahut weak hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "2",
+        "din",
+        "se",
+        "sar",
+        "dard",
+        "aur",
+        "vomiting",
+        "lag",
+        "raha",
+        "hai,",
+        "body",
+        "bahut",
+        "weak",
+        "hai."
+      ],
+      "tags": [
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-SITE",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sar",
+          "label": "SITE"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        },
+        {
+          "text": "bahut",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "weak",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "loose motions ho raha hai 2 days se aur severe body heat bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "loose",
+        "motions",
+        "ho",
+        "raha",
+        "hai",
+        "2",
+        "days",
+        "se",
+        "aur",
+        "severe",
+        "body",
+        "heat",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing mild vomiting and vomiting for 2 din.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "mild",
+        "vomiting",
+        "and",
+        "vomiting",
+        "for",
+        "2",
+        "din."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kaichal 2 naal ah irukku, body vali romba heavy ah irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Kaichal",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "body",
+        "vali",
+        "romba",
+        "heavy",
+        "ah",
+        "irukku."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 naal",
+          "label": "DURATION"
+        },
+        {
+          "text": "body vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        },
+        {
+          "text": "romba heavy",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Enakku 5 days irundhu saans lene me dikkat and sweating romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "5",
+        "days",
+        "irundhu",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "and",
+        "sweating",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sweating",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "5 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thondai vali konjam irukku, dry cough 4 days ah irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thondai",
+        "vali",
+        "konjam",
+        "irukku,",
+        "dry",
+        "cough",
+        "4",
+        "days",
+        "ah",
+        "irukku."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "B-SEVERITY",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Thondai vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "Thondai",
+          "label": "SITE"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "dry cough",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Enakku kal raat irundhu kaichal and body heat romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "kal",
+        "raat",
+        "irundhu",
+        "kaichal",
+        "and",
+        "body",
+        "heat",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Chronic lower back pain worsening over 3 weeks with bilateral leg weakness.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Chronic",
+        "lower",
+        "back",
+        "pain",
+        "worsening",
+        "over",
+        "3",
+        "weeks",
+        "with",
+        "bilateral",
+        "leg",
+        "weakness."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM"
+      ],
+      "entities": [
+        {
+          "text": "lower back pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "lower back",
+          "label": "SITE"
+        },
+        {
+          "text": "3 weeks",
+          "label": "DURATION"
+        },
+        {
+          "text": "leg weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "leg",
+          "label": "SITE"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Acute abdominal pain located in epigastric region with vomiting.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Acute",
+        "abdominal",
+        "pain",
+        "located",
+        "in",
+        "epigastric",
+        "region",
+        "with",
+        "vomiting."
+      ],
+      "tags": [
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "I-SITE",
+        "O",
+        "B-SYMPTOM"
+      ],
+      "entities": [
+        {
+          "text": "Acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "abdominal pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "epigastric region",
+          "label": "SITE"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Persistent headache and nausea for past 2 days with moderate dizziness.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Persistent",
+        "headache",
+        "and",
+        "nausea",
+        "for",
+        "past",
+        "2",
+        "days",
+        "with",
+        "moderate",
+        "dizziness."
+      ],
+      "tags": [
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM"
+      ],
+      "entities": [
+        {
+          "text": "Persistent",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "headache",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "nausea",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Achanak severe abdominal pain ho raha hai aur ulti me blood aaya hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Achanak",
+        "severe",
+        "abdominal",
+        "pain",
+        "ho",
+        "raha",
+        "hai",
+        "aur",
+        "ulti",
+        "me",
+        "blood",
+        "aaya",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "abdominal pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "abdominal",
+          "label": "SITE"
+        },
+        {
+          "text": "ulti me blood",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Subah se loose motions hai aur pet me cramping ho rahi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Subah",
+        "se",
+        "loose",
+        "motions",
+        "hai",
+        "aur",
+        "pet",
+        "me",
+        "cramping",
+        "ho",
+        "rahi",
+        "hai."
+      ],
+      "tags": [
+        "B-DURATION",
+        "I-DURATION",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Subah se",
+          "label": "DURATION"
+        },
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        },
+        {
+          "text": "cramping",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "sar dard ho raha hai kal raat se aur halka body heat bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "sar",
+        "dard",
+        "ho",
+        "raha",
+        "hai",
+        "kal",
+        "raat",
+        "se",
+        "aur",
+        "halka",
+        "body",
+        "heat",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing halka saans lene me dikkat and weakness for 1 week.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "halka",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "and",
+        "weakness",
+        "for",
+        "1",
+        "week."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se thala vali aur body me dard hai, feel ho raha hai mild.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "thala",
+        "vali",
+        "aur",
+        "body",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "mild."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 2 din irundhu vaanthi and vomiting romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "din",
+        "irundhu",
+        "vaanthi",
+        "and",
+        "vomiting",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "khansi ho raha hai 4 hours se aur mild tired bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "khansi",
+        "ho",
+        "raha",
+        "hai",
+        "4",
+        "hours",
+        "se",
+        "aur",
+        "mild",
+        "tired",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "khansi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "thondai romba valikkuthu, since morning ah mild gala dard irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "thondai",
+        "romba",
+        "valikkuthu,",
+        "since",
+        "morning",
+        "ah",
+        "mild",
+        "gala",
+        "dard",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "gala dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "kaichal ho raha hai since morning se aur konjam nausea bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "kaichal",
+        "ho",
+        "raha",
+        "hai",
+        "since",
+        "morning",
+        "se",
+        "aur",
+        "konjam",
+        "nausea",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "nausea",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe loose motions radiating to nenju since 2 din.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "loose",
+        "motions",
+        "radiating",
+        "to",
+        "nenju",
+        "since",
+        "2",
+        "din."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "nenju",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 4 hours irundhu sar dard and vomiting romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "4",
+        "hours",
+        "irundhu",
+        "sar",
+        "dard",
+        "and",
+        "vomiting",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "sar",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mild sore throat and productive cough for 5 days without fever.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Mild",
+        "sore",
+        "throat",
+        "and",
+        "productive",
+        "cough",
+        "for",
+        "5",
+        "days",
+        "without",
+        "fever."
+      ],
+      "tags": [
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Mild",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "sore throat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "throat",
+          "label": "SITE"
+        },
+        {
+          "text": "productive cough",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "5 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Enakku 2 days irundhu khansi and dizziness romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "days",
+        "irundhu",
+        "khansi",
+        "and",
+        "dizziness",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "khansi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "back romba valikkuthu, 4 hours ah unbearable pet dard irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "back",
+        "romba",
+        "valikkuthu,",
+        "4",
+        "hours",
+        "ah",
+        "unbearable",
+        "pet",
+        "dard",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "back",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe subah se se gala me halka vaanthi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "subah",
+        "se",
+        "se",
+        "gala",
+        "me",
+        "halka",
+        "vaanthi",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "subah se",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe since morning se gala me severe saans lene me dikkat hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "since",
+        "morning",
+        "se",
+        "gala",
+        "me",
+        "severe",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and loose motions 2 naal ah irukku, severe feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "loose",
+        "motions",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "severe",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 3 naal ah gala pain irukku, fever um konjam high ah irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "3",
+        "naal",
+        "ah",
+        "gala",
+        "pain",
+        "irukku,",
+        "fever",
+        "um",
+        "konjam",
+        "high",
+        "ah",
+        "irukku."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        },
+        {
+          "text": "fever",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam high",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Loss of consciousness and syncope reported today morning.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Loss",
+        "of",
+        "consciousness",
+        "and",
+        "syncope",
+        "reported",
+        "today",
+        "morning."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "Loss of consciousness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "syncope",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "today morning",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Kamzori bahut zyada lag rahi hai aur thakan 5 din se hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kamzori",
+        "bahut",
+        "zyada",
+        "lag",
+        "rahi",
+        "hai",
+        "aur",
+        "thakan",
+        "5",
+        "din",
+        "se",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Kamzori",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut zyada",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "thakan",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "5 din",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Enakku 4 hours irundhu kaichal and shivering romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "4",
+        "hours",
+        "irundhu",
+        "kaichal",
+        "and",
+        "shivering",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe vomiting radiating to sar since kal raat.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "vomiting",
+        "radiating",
+        "to",
+        "sar",
+        "since",
+        "kal",
+        "raat."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "sar",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 2 din se nenju me konjam kaichal hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "2",
+        "din",
+        "se",
+        "nenju",
+        "me",
+        "konjam",
+        "kaichal",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "nenju",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala suthudhu, mayakkam vara madhiri irukku since yesterday.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "suthudhu,",
+        "mayakkam",
+        "vara",
+        "madhiri",
+        "irukku",
+        "since",
+        "yesterday."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "Thala suthudhu",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "Thala",
+          "label": "SITE"
+        },
+        {
+          "text": "mayakkam",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "since yesterday",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "nenju vali ho raha hai 5 days se aur moderate shivering bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "nenju",
+        "vali",
+        "ho",
+        "raha",
+        "hai",
+        "5",
+        "days",
+        "se",
+        "aur",
+        "moderate",
+        "shivering",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "5 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe chest pain radiating to gala since kal raat.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "chest",
+        "pain",
+        "radiating",
+        "to",
+        "gala",
+        "since",
+        "kal",
+        "raat."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and loose motions 2 naal ah irukku, halka feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "loose",
+        "motions",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "halka",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe chest pain radiating to pet since 4 hours.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "chest",
+        "pain",
+        "radiating",
+        "to",
+        "pet",
+        "since",
+        "4",
+        "hours."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Dil tezi se dhadak raha hai aur chest pressure feel ho raha hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Dil",
+        "tezi",
+        "se",
+        "dhadak",
+        "raha",
+        "hai",
+        "aur",
+        "chest",
+        "pressure",
+        "feel",
+        "ho",
+        "raha",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "dil tezi se dhadak raha",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "chest pressure",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "pet romba valikkuthu, 2 din ah unbearable saans lene me dikkat irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "pet",
+        "romba",
+        "valikkuthu,",
+        "2",
+        "din",
+        "ah",
+        "unbearable",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "unbearable",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku kal raat irundhu kaichal and shivering romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "kal",
+        "raat",
+        "irundhu",
+        "kaichal",
+        "and",
+        "shivering",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "kaichal",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal raat se gala kharab hai, khansi hai aur body heat lag rahi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "raat",
+        "se",
+        "gala",
+        "kharab",
+        "hai,",
+        "khansi",
+        "hai",
+        "aur",
+        "body",
+        "heat",
+        "lag",
+        "rahi",
+        "hai."
+      ],
+      "tags": [
+        "B-DURATION",
+        "I-DURATION",
+        "I-DURATION",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Kal raat se",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala kharab",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        },
+        {
+          "text": "khansi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Kamar me tez dard hai subah se, chalne me problem ho rahi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kamar",
+        "me",
+        "tez",
+        "dard",
+        "hai",
+        "subah",
+        "se,",
+        "chalne",
+        "me",
+        "problem",
+        "ho",
+        "rahi",
+        "hai."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Kamar",
+          "label": "SITE"
+        },
+        {
+          "text": "tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "subah se",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Thala vali and pet dard 2 naal ah irukku, mild feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "pet",
+        "dard",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "mild",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "pet dard ho raha hai since morning se aur mild body heat bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "pet",
+        "dard",
+        "ho",
+        "raha",
+        "hai",
+        "since",
+        "morning",
+        "se",
+        "aur",
+        "mild",
+        "body",
+        "heat",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Achanak tez sar dard shuru ho gaya aur chakkar aa raha hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Achanak",
+        "tez",
+        "sar",
+        "dard",
+        "shuru",
+        "ho",
+        "gaya",
+        "aur",
+        "chakkar",
+        "aa",
+        "raha",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sar",
+          "label": "SITE"
+        },
+        {
+          "text": "chakkar",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    }
+  ],
+  "dev": [
+    {
+      "text": "Vayitru pokku 5 times aachu inniku, weak ah feel aagudhu.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Vayitru",
+        "pokku",
+        "5",
+        "times",
+        "aachu",
+        "inniku,",
+        "weak",
+        "ah",
+        "feel",
+        "aagudhu."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Vayitru pokku",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "Vayitru",
+          "label": "SITE"
+        },
+        {
+          "text": "inniku",
+          "label": "DURATION"
+        },
+        {
+          "text": "weak",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Severe thala vali radiating to pet since 2 din.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "thala",
+        "vali",
+        "radiating",
+        "to",
+        "pet",
+        "since",
+        "2",
+        "din."
+      ],
+      "tags": [
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe chest pain radiating to body since since morning.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "chest",
+        "pain",
+        "radiating",
+        "to",
+        "body",
+        "since",
+        "since",
+        "morning."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku subah se irundhu thala vali and vomiting romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "subah",
+        "se",
+        "irundhu",
+        "thala",
+        "vali",
+        "and",
+        "vomiting",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "subah se",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "chest pain ho raha hai 4 hours se aur romba high body heat bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "chest",
+        "pain",
+        "ho",
+        "raha",
+        "hai",
+        "4",
+        "hours",
+        "se",
+        "aur",
+        "romba",
+        "high",
+        "body",
+        "heat",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body heat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba high",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 1 week se chest me severe vaanthi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "1",
+        "week",
+        "se",
+        "chest",
+        "me",
+        "severe",
+        "vaanthi",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and vomiting 2 naal ah irukku, halka feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "vomiting",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "halka",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "mujhe zor se chest pain ho rha hai aur sar dard bhi",
+      "dialect": "Hinglish",
+      "tokens": [
+        "mujhe",
+        "zor",
+        "se",
+        "chest",
+        "pain",
+        "ho",
+        "rha",
+        "hai",
+        "aur",
+        "sar",
+        "dard",
+        "bhi"
+      ],
+      "tags": [
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "zor se",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        },
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "sar",
+          "label": "SITE"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Kal se vaanthi aur nenju me dard hai, feel ho raha hai severe.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "vaanthi",
+        "aur",
+        "nenju",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "severe."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "nenju",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 2 din irundhu loose motions and tired romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "din",
+        "irundhu",
+        "loose",
+        "motions",
+        "and",
+        "tired",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "thondai romba valikkuthu, since morning ah konjam vomiting irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "thondai",
+        "romba",
+        "valikkuthu,",
+        "since",
+        "morning",
+        "ah",
+        "konjam",
+        "vomiting",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "nenju romba valikkuthu, kal raat ah bahut tez pet dard irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "nenju",
+        "romba",
+        "valikkuthu,",
+        "kal",
+        "raat",
+        "ah",
+        "bahut",
+        "tez",
+        "pet",
+        "dard",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "pet dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "nenju",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se nenju vali aur pet me dard hai, feel ho raha hai romba high.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "nenju",
+        "vali",
+        "aur",
+        "pet",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "romba",
+        "high."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba high",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "nenju vali ho raha hai 3 naal se aur halka vomiting bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "nenju",
+        "vali",
+        "ho",
+        "raha",
+        "hai",
+        "3",
+        "naal",
+        "se",
+        "aur",
+        "halka",
+        "vomiting",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Nenju vali romba athigama irukku, saans vidradhula kastam irukku 2 hours ah.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Nenju",
+        "vali",
+        "romba",
+        "athigama",
+        "irukku,",
+        "saans",
+        "vidradhula",
+        "kastam",
+        "irukku",
+        "2",
+        "hours",
+        "ah."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "Nenju",
+          "label": "SITE"
+        },
+        {
+          "text": "romba athigama",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "saans vidradhula kastam",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Thala vali and thala vali 2 naal ah irukku, mild feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "thala",
+        "vali",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "mild",
+        "feeling."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "thala vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing halka vaanthi and vomiting for kal raat.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "halka",
+        "vaanthi",
+        "and",
+        "vomiting",
+        "for",
+        "kal",
+        "raat."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "chest pain ho raha hai 2 days se aur moderate dizziness bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "chest",
+        "pain",
+        "ho",
+        "raha",
+        "hai",
+        "2",
+        "days",
+        "se",
+        "aur",
+        "moderate",
+        "dizziness",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 1 week irundhu chakkar and dizziness romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "1",
+        "week",
+        "irundhu",
+        "chakkar",
+        "and",
+        "dizziness",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chakkar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Pichle 3 dino se dry cough hai aur breathing difficulty ho rahi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Pichle",
+        "3",
+        "dino",
+        "se",
+        "dry",
+        "cough",
+        "hai",
+        "aur",
+        "breathing",
+        "difficulty",
+        "ho",
+        "rahi",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "3 dino",
+          "label": "DURATION"
+        },
+        {
+          "text": "dry cough",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "breathing difficulty",
+          "label": "SYMPTOM"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Skin par red spots aur khujli ho rahi hai 2 days se.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Skin",
+        "par",
+        "red",
+        "spots",
+        "aur",
+        "khujli",
+        "ho",
+        "rahi",
+        "hai",
+        "2",
+        "days",
+        "se."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Skin",
+          "label": "SITE"
+        },
+        {
+          "text": "red spots",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "khujli",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Enakku 2 din irundhu chest pain and nausea romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "2",
+        "din",
+        "irundhu",
+        "chest",
+        "pain",
+        "and",
+        "nausea",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "nausea",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 din",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Hematemesis and dark tarry stools starting 6 hours ago with acute distress.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Hematemesis",
+        "and",
+        "dark",
+        "tarry",
+        "stools",
+        "starting",
+        "6",
+        "hours",
+        "ago",
+        "with",
+        "acute",
+        "distress."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "Hematemesis",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dark tarry stools",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "6 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    }
+  ],
+  "test": [
+    {
+      "text": "Kal se halka cough hai, no fever and severity mild.",
+      "dialect": "Hinglish / English mixed",
+      "tokens": [
+        "Kal",
+        "se",
+        "halka",
+        "cough",
+        "hai,",
+        "no",
+        "fever",
+        "and",
+        "severity",
+        "mild."
+      ],
+      "tags": [
+        "B-DURATION",
+        "I-DURATION",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "Kal se",
+          "label": "DURATION"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "cough",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "vomiting ho raha hai 1 week se aur bahut tez tired bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "vomiting",
+        "ho",
+        "raha",
+        "hai",
+        "1",
+        "week",
+        "se",
+        "aur",
+        "bahut",
+        "tez",
+        "tired",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vomiting",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "tired",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and vaanthi 2 naal ah irukku, halka feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "vaanthi",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "halka",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "halka",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing severe loose motions and weakness for 1 week.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "severe",
+        "loose",
+        "motions",
+        "and",
+        "weakness",
+        "for",
+        "1",
+        "week."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing moderate loose motions and shivering for since morning.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "moderate",
+        "loose",
+        "motions",
+        "and",
+        "shivering",
+        "for",
+        "since",
+        "morning."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "since morning",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "vaanthi ho raha hai 3 naal se aur bahut tez shivering bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "vaanthi",
+        "ho",
+        "raha",
+        "hai",
+        "3",
+        "naal",
+        "se",
+        "aur",
+        "bahut",
+        "tez",
+        "shivering",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "shivering",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe vaanthi radiating to gala since 1 week.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "vaanthi",
+        "radiating",
+        "to",
+        "gala",
+        "since",
+        "1",
+        "week."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient reports severe chest pain and shortness of breath for 3 hours.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "reports",
+        "severe",
+        "chest",
+        "pain",
+        "and",
+        "shortness",
+        "of",
+        "breath",
+        "for",
+        "3",
+        "hours."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "chest",
+          "label": "SITE"
+        },
+        {
+          "text": "shortness of breath",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "3 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "Severe saans lene me dikkat radiating to pet since 4 hours.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "radiating",
+        "to",
+        "pet",
+        "since",
+        "4",
+        "hours."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe bukhar radiating to thondai since 1 week.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "bukhar",
+        "radiating",
+        "to",
+        "thondai",
+        "since",
+        "1",
+        "week."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "bukhar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Mujhe 1 week se back me acute vaanthi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Mujhe",
+        "1",
+        "week",
+        "se",
+        "back",
+        "me",
+        "acute",
+        "vaanthi",
+        "hai."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SITE",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "vaanthi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "acute",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "1 week",
+          "label": "DURATION"
+        },
+        {
+          "text": "back",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and chest pain 2 naal ah irukku, moderate feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "chest",
+        "pain",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "moderate",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chest pain",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Patient experiencing severe nenju vali and weakness for 2 days.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Patient",
+        "experiencing",
+        "severe",
+        "nenju",
+        "vali",
+        "and",
+        "weakness",
+        "for",
+        "2",
+        "days."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe saans lene me dikkat radiating to thondai since kal raat.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "saans",
+        "lene",
+        "me",
+        "dikkat",
+        "radiating",
+        "to",
+        "thondai",
+        "since",
+        "kal",
+        "raat."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "saans lene me dikkat",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "kal raat",
+          "label": "DURATION"
+        },
+        {
+          "text": "thondai",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "pet romba valikkuthu, 2 days ah romba high chakkar irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "pet",
+        "romba",
+        "valikkuthu,",
+        "2",
+        "days",
+        "ah",
+        "romba",
+        "high",
+        "chakkar",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "chakkar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "romba high",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Enakku 4 hours irundhu loose motions and weakness romba jaasthi.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Enakku",
+        "4",
+        "hours",
+        "irundhu",
+        "loose",
+        "motions",
+        "and",
+        "weakness",
+        "romba",
+        "jaasthi."
+      ],
+      "tags": [
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "loose motions",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "nenju vali ho raha hai 4 hours se aur severe dizziness bhi hai.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "nenju",
+        "vali",
+        "ho",
+        "raha",
+        "hai",
+        "4",
+        "hours",
+        "se",
+        "aur",
+        "severe",
+        "dizziness",
+        "bhi",
+        "hai."
+      ],
+      "tags": [
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "dizziness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "severe",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "4 hours",
+          "label": "DURATION"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe sar dard radiating to gala since 2 days.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "sar",
+        "dard",
+        "radiating",
+        "to",
+        "gala",
+        "since",
+        "2",
+        "days."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "sar dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "2 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "gala",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Kal se khansi aur pet me dard hai, feel ho raha hai moderate.",
+      "dialect": "Hinglish",
+      "tokens": [
+        "Kal",
+        "se",
+        "khansi",
+        "aur",
+        "pet",
+        "me",
+        "dard",
+        "hai,",
+        "feel",
+        "ho",
+        "raha",
+        "hai",
+        "moderate."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "B-SITE",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY"
+      ],
+      "entities": [
+        {
+          "text": "khansi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "moderate",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Generalized body weakness and high fever of 102 F for 4 days.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Generalized",
+        "body",
+        "weakness",
+        "and",
+        "high",
+        "fever",
+        "of",
+        "102",
+        "F",
+        "for",
+        "4",
+        "days."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "B-SEVERITY",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "body weakness",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        },
+        {
+          "text": "high",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "fever",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "4 days",
+          "label": "DURATION"
+        }
+      ],
+      "source": "curated_telecare"
+    },
+    {
+      "text": "body romba valikkuthu, 5 days ah bahut tez nenju vali irukku.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "body",
+        "romba",
+        "valikkuthu,",
+        "5",
+        "days",
+        "ah",
+        "bahut",
+        "tez",
+        "nenju",
+        "vali",
+        "irukku."
+      ],
+      "tags": [
+        "B-SITE",
+        "O",
+        "O",
+        "B-DURATION",
+        "I-DURATION",
+        "O",
+        "B-SEVERITY",
+        "I-SEVERITY",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "nenju vali",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "bahut tez",
+          "label": "SEVERITY"
+        },
+        {
+          "text": "5 days",
+          "label": "DURATION"
+        },
+        {
+          "text": "body",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Severe chakkar radiating to pet since 3 naal.",
+      "dialect": "Clinical English",
+      "tokens": [
+        "Severe",
+        "chakkar",
+        "radiating",
+        "to",
+        "pet",
+        "since",
+        "3",
+        "naal."
+      ],
+      "tags": [
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "B-SITE",
+        "O",
+        "B-DURATION",
+        "I-DURATION"
+      ],
+      "entities": [
+        {
+          "text": "chakkar",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "3 naal",
+          "label": "DURATION"
+        },
+        {
+          "text": "pet",
+          "label": "SITE"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and khansi 2 naal ah irukku, konjam feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "khansi",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "konjam",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "khansi",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "konjam",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    },
+    {
+      "text": "Thala vali and gala dard 2 naal ah irukku, mild feeling.",
+      "dialect": "Tanglish",
+      "tokens": [
+        "Thala",
+        "vali",
+        "and",
+        "gala",
+        "dard",
+        "2",
+        "naal",
+        "ah",
+        "irukku,",
+        "mild",
+        "feeling."
+      ],
+      "tags": [
+        "O",
+        "O",
+        "O",
+        "B-SYMPTOM",
+        "I-SYMPTOM",
+        "O",
+        "O",
+        "O",
+        "O",
+        "B-SEVERITY",
+        "O"
+      ],
+      "entities": [
+        {
+          "text": "gala dard",
+          "label": "SYMPTOM"
+        },
+        {
+          "text": "mild",
+          "label": "SEVERITY"
+        }
+      ],
+      "source": "augmented_permutation"
+    }
+  ]
+}

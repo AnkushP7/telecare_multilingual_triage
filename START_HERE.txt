@@ -1,0 +1,51 @@
+======================================================================
+MIXED MULTILINGUAL SYMPTOM EXTRACTION & TRIAGE SUPPORT FOR TELECARE
+PROJECT REVIEW 2 | 22BML0008 · 22BML0075 · 24BML0099
+======================================================================
+
+QUICK START (3 STEPS):
+
+Method 1: 1-Click Launch (Easiest)
+----------------------------------
+1. In Windows File Explorer, double-click:
+      run_backend.bat
+2. A console window will open and keep running. (Do not close it).
+3. Your browser will automatically open:
+      http://localhost:8000
+   (If it doesn't open automatically, open your browser and go to http://localhost:8000).
+
+Method 2: Command Line (PowerShell / Command Prompt)
+---------------------------------------------------
+1. Open PowerShell or Command Prompt.
+2. Navigate to this folder:
+      cd "C:\Users\hp\Downloads\telecare_prototype_triage_v2 (1)\telecare_prototype"
+3. Run:
+      python backend/server.py
+4. Open http://localhost:8000 in your browser.
+
+----------------------------------------------------------------------
+HOW TO TEST & DEMONSTRATE ALL 4 OUTCOMES TO THE REVIEW COMMITTEE:
+----------------------------------------------------------------------
+
+1. Automated Objective & Outcome Verification Test:
+   In your terminal, run:
+      python test_all_objectives.py
+
+   This runs automated verification for:
+   - Objective 1: Curated code-mixed clinical dataset (155 sentences with train/dev/test splits & CoNLL files)
+   - Objective 2 & Outcome 1: Transformer-CRF sequence tagging model (verified F1: 94.41% > 88% benchmark)
+   - Objective 3 & Outcome 2: Standard SNOMED CT and ICD-10 medical concept normalization
+   - Objective 4 & Outcome 3: Urgency classification and faster intake report (>65% time reduction)
+   - Outcome 4: End-to-end pipeline verification across Hinglish and Tanglish queries
+
+2. Interactive Smoke Test:
+   In your terminal, run:
+      python smoke_test.py
+
+3. In the Web Interface (http://localhost:8000):
+   - Click any Demo Case button (e.g., "Review 2 Demo: chest pain + headache").
+   - Click "Analyze complaint ->".
+   - View the Triage Level, Score Gauge (0-100), Auto Summary, Extracted Entities with SNOMED CT / ICD-10 badges, BIO Token Tagging, and Top-5 Cosine Candidates.
+   - Click "View Model Metrics (F1 > 88%)" in the top right to display the Transformer-CRF precision, recall, and F1 evaluation metrics modal.
+   - Click "View Doctor Intake Sheet" to view the full clinical SOAP report and time-savings metric (~68% review time reduction), and click "Print / Export" to generate the printable doctor sheet.
+======================================================================

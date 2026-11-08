@@ -1,0 +1,35 @@
+{
+  "overall": {
+    "precision": 93.83,
+    "recall": 95.0,
+    "f1_score": 94.41,
+    "total_entities": 80,
+    "target_threshold_met": true
+  },
+  "per_entity": {
+    "SYMPTOM": {
+      "precision": 91.18,
+      "recall": 93.94,
+      "f1_score": 92.54,
+      "support": 33
+    },
+    "DURATION": {
+      "precision": 100.0,
+      "recall": 94.74,
+      "f1_score": 97.3,
+      "support": 19
+    },
+    "SEVERITY": {
+      "precision": 89.47,
+      "recall": 94.44,
+      "f1_score": 91.89,
+      "support": 18
+    },
+    "SITE": {
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "support": 10
+    }
+  }
+}

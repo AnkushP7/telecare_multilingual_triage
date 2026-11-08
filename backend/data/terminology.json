@@ -1,0 +1,311 @@
+[
+  {
+    "key": "headache",
+    "terms": [
+      "headache",
+      "head pain",
+      "sar dard",
+      "sir dard",
+      "thala vali",
+      "thalavali",
+      "thala valikkuthu",
+      "thalai vali",
+      "migraine",
+      "head me dard",
+      "sar me dard",
+      "thalai vali irukku"
+    ],
+    "normalized": "Headache",
+    "icd10": "R51.9",
+    "snomed_ct": "25064002"
+  },
+  {
+    "key": "vomiting",
+    "terms": [
+      "vomiting",
+      "vomit",
+      "vomit ho raha",
+      "ulti",
+      "ulti ho rahi",
+      "vomiting ho rahi",
+      "vomit lag raha",
+      "vomiting lag raha",
+      "vaanthi",
+      "vaandhi",
+      "vanthi varudhu",
+      "baar baar vomiting",
+      "bar bar ulti"
+    ],
+    "normalized": "Vomiting",
+    "icd10": "R11.10",
+    "snomed_ct": "422400008"
+  },
+  {
+    "key": "nausea",
+    "terms": [
+      "nausea",
+      "nauseous",
+      "matli",
+      "mann nahi lag raha",
+      "queasy",
+      "vomit jaisa lag raha",
+      "vaanthi vara madhiri"
+    ],
+    "normalized": "Nausea",
+    "icd10": "R11.0",
+    "snomed_ct": "422587007"
+  },
+  {
+    "key": "fever",
+    "terms": [
+      "fever",
+      "bukhar",
+      "jwar",
+      "body heat",
+      "temperature",
+      "kaichal",
+      "காய்ச்சல்",
+      "kaychal",
+      "high fever",
+      "fever um",
+      "bukhar hai"
+    ],
+    "normalized": "Fever",
+    "icd10": "R50.9",
+    "snomed_ct": "386661006"
+  },
+  {
+    "key": "cough",
+    "terms": [
+      "cough",
+      "khansi",
+      "khasam",
+      "இருமல்",
+      "irumal",
+      "dry cough",
+      "khasi",
+      "cough hai"
+    ],
+    "normalized": "Cough",
+    "icd10": "R05.9",
+    "snomed_ct": "49727002"
+  },
+  {
+    "key": "sore_throat",
+    "terms": [
+      "sore throat",
+      "throat pain",
+      "gala dard",
+      "gale me dard",
+      "gala mein dard",
+      "gala pain",
+      "throat me pain",
+      "தொண்டை வலி",
+      "thondai vali",
+      "gala kharab",
+      "kharash",
+      "gala vali"
+    ],
+    "normalized": "Sore throat",
+    "icd10": "R07.0",
+    "snomed_ct": "267102003"
+  },
+  {
+    "key": "chest_pain",
+    "terms": [
+      "chest pain",
+      "chest dard",
+      "seene me dard",
+      "seene mein dard",
+      "chest heavy",
+      "chest pressure",
+      "மார்பு வலி",
+      "nenju vali",
+      "chest me pain",
+      "seena dard",
+      "nenjula vali",
+      "chest tight"
+    ],
+    "normalized": "Chest pain",
+    "icd10": "R07.9",
+    "snomed_ct": "29857009"
+  },
+  {
+    "key": "shortness_breath",
+    "terms": [
+      "shortness of breath",
+      "breathlessness",
+      "saans lene me dikkat",
+      "saans lene mein dikkat",
+      "saans phool raha",
+      "breathing problem",
+      "மூச்சுத்திணறல்",
+      "saans lene mein thodi dikkat",
+      "saans nahi aa raha",
+      "moochu thinaral",
+      "difficulty breathing"
+    ],
+    "normalized": "Shortness of breath",
+    "icd10": "R06.02",
+    "snomed_ct": "267036007"
+  },
+  {
+    "key": "abdominal_pain",
+    "terms": [
+      "stomach pain",
+      "abdominal pain",
+      "pet dard",
+      "pet mein dard",
+      "pet me dard",
+      "stomach me pain",
+      "வயிற்று வலி",
+      "vayiru vali",
+      "tummy pain",
+      "pet me bahut dard"
+    ],
+    "normalized": "Abdominal pain",
+    "icd10": "R10.9",
+    "snomed_ct": "21522001"
+  },
+  {
+    "key": "dizziness",
+    "terms": [
+      "dizziness",
+      "dizzy",
+      "chakkar",
+      "thala suthudhu",
+      "head spinning",
+      "mayakkam",
+      "chakkar aa raha",
+      "thala suthuradhu"
+    ],
+    "normalized": "Dizziness",
+    "icd10": "R42",
+    "snomed_ct": "404640003"
+  },
+  {
+    "key": "fatigue",
+    "terms": [
+      "feeling weak",
+      "feel weak",
+      "body weak",
+      "weak",
+      "fatigue",
+      "tired",
+      "weakness",
+      "kamzori",
+      "thakan",
+      "romba tired",
+      "சோர்வு",
+      "asathi",
+      "body bahut weak",
+      "bahut kamzori"
+    ],
+    "normalized": "Fatigue / weakness",
+    "icd10": "R53.83",
+    "snomed_ct": "84229001"
+  },
+  {
+    "key": "palpitations",
+    "terms": [
+      "palpitations",
+      "dil tezi se dhadak raha",
+      "heart beating fast",
+      "rapid heartbeat",
+      "nenju padapadappu",
+      "padapadappu",
+      "heart racing"
+    ],
+    "normalized": "Palpitations",
+    "icd10": "R00.2",
+    "snomed_ct": "80313002"
+  },
+  {
+    "key": "diarrhea",
+    "terms": [
+      "diarrhea",
+      "loose motion",
+      "loose motions",
+      "dast",
+      "pet kharab",
+      "vayitru pokku",
+      "loose stools"
+    ],
+    "normalized": "Diarrhea",
+    "icd10": "R19.7",
+    "snomed_ct": "62315008"
+  },
+  {
+    "key": "syncope",
+    "terms": [
+      "faint",
+      "fainted",
+      "unconscious",
+      "behoshi",
+      "behosh ho gaya",
+      "mayakkam pottuten",
+      "loss of consciousness",
+      "passed out"
+    ],
+    "normalized": "Syncope / Fainting",
+    "icd10": "R55",
+    "snomed_ct": "271594007"
+  },
+  {
+    "key": "hematemesis",
+    "terms": [
+      "vomiting blood",
+      "blood in vomit",
+      "ulti me blood",
+      "ulti mein khoon",
+      "vaandhila blood",
+      "vomit blood"
+    ],
+    "normalized": "Blood in vomit (Hematemesis)",
+    "icd10": "K92.0",
+    "snomed_ct": "44903000"
+  },
+  {
+    "key": "myalgia",
+    "terms": [
+      "body ache",
+      "badan dard",
+      "body pain",
+      "udal vali",
+      "poora badan dard",
+      "angam vali",
+      "muscle pain"
+    ],
+    "normalized": "Body ache / Myalgia",
+    "icd10": "M79.1",
+    "snomed_ct": "68962001"
+  },
+  {
+    "key": "back_pain",
+    "terms": [
+      "back pain",
+      "kamar dard",
+      "peeth dard",
+      "mudhugu vali",
+      "lower back pain"
+    ],
+    "normalized": "Back pain",
+    "icd10": "M54.9",
+    "snomed_ct": "161891005"
+  },
+  {
+    "key": "rash",
+    "terms": [
+      "skin rash",
+      "rash",
+      "khujli",
+      "red spots",
+      "skin itching",
+      "thadippu",
+      "aripu"
+    ],
+    "normalized": "Skin rash / Itching",
+    "icd10": "R21",
+    "snomed_ct": "271807003"
+  }
+]

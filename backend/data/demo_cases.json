@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Review 2 Demo: chest pain + headache",
+    "text": "mujhe zor se chest pain ho rha hai aur sar dard bhi"
+  },
+  {
+    "label": "Hinglish: headache + vomiting",
+    "text": "2 din se sar dard aur vomiting lag raha hai, body bahut weak hai."
+  },
+  {
+    "label": "Tanglish: sore throat + fever",
+    "text": "Enakku 3 naal ah gala pain irukku, fever um konjam high ah irukku."
+  },
+  {
+    "label": "Mixed: chest complaint",
+    "text": "Since morning chest heavy hai aur saans lene mein thodi dikkat ho rahi hai."
+  },
+  {
+    "label": "Low-risk: mild cough",
+    "text": "Kal se halka cough hai, no fever and severity mild."
+  },
+  {
+    "label": "Emergency: blood in vomit",
+    "text": "Achanak severe abdominal pain ho raha hai aur ulti me blood aaya hai."
+  },
+  {
+    "label": "Tanglish: chest pressure + dyspnea",
+    "text": "Nenju vali romba athigama irukku, saans vidradhula kastam irukku 2 hours ah."
+  }
+]
